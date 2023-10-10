@@ -1,0 +1,157 @@
+/* Global reset and basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 20px;
+}
+
+/* Navigation styles */
+.nav {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Main section styles */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.section {
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    background-color: #f0f0f0;
+    /* Background color for sections */
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.section li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .main .section {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+/* ... (previous styles) ... */
+
+/* Section heading styles */
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+    background-color: #f0f0f0;
+    /* Background color for headings */
+    padding: 5px 10px;
+    /* Add padding to headings for better visual separation */
+}
+
+/* Paragraph styles */
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0;
+    /* Background color for paragraphs */
+    padding: 5px 10px;
+    /* Add padding to paragraphs for better visual separation */
+}
+
+/* List item styles */
+.section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.section li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    background-color: #f0f0f0;
+    /* Background color for list items */
+    padding: 5px 10px;
+    /* Add padding to list items for better visual separation */
+}
